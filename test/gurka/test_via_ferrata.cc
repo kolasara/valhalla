@@ -36,7 +36,7 @@ gurka::map Testing::map = {}
 // Define the test case 
 TEST_F(Testing, CheckTesting){
     auto result = gurka::route(map, "A", "B", "pedestrian");
-    // verify the result
+    // Verify the result
     gurka::assert::osrm::expect_steps(result, {"A", "B"});
 
 }
